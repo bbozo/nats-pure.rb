@@ -104,7 +104,7 @@ RSpec.describe NATS::Service::Stats do
       end
     end
 
-    context "when there errors have already occured" do
+    context "when there errors have already occurred" do
       before { subject.error(StandardError.new) }
 
       it "increases num_errors" do

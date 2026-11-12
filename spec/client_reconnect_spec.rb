@@ -626,7 +626,7 @@ describe "Client - Reconnect" do
     let(:nats) { NATS.connect }
 
     context "when client is connected" do
-      it "succesfully reconnects" do
+      it "successfully reconnects" do
         reconnected = false
         nats.on_reconnect { reconnected = true }
 
